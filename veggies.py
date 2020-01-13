@@ -11,7 +11,7 @@ vegetables = [
 
 with open('vegetables.csv', 'w') as f:
 	writer = csv.writer(f)
-	writer.writerow(['name', 'color'])
+	writer.writerow(['name', 'color', 'length'])
 
 	for i in vegetables:
 		writer.writerow([i["name"], i["color"], len(i["name"])])
